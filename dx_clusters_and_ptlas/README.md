@@ -105,8 +105,8 @@ It's based on our technology that appeared in
 High Performance Graphics 2026, ported to DXR.
 
 In this sample, the terrain system dynamically tessellates
-the ground into clusters to provide a constant level of detail as the camera
-moves across the world.
+the ground into clusters to provide a nearly uniform level of screen-space
+detail as the camera moves across the world.
 Since we know that each cluster will use one of 636 tessellation patterns,
 we build a cluster template for each tessellation pattern and then use this
 when building CLASes.
@@ -166,6 +166,6 @@ For more information about the new Clustered Geometry and Partitioned TLAS APIs,
 or take a deep dive into [the functional specification](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing2.html).
 In addition, new samples have just been released, so you can learn how to use the API with code running on your own computer:
 
-* [D3D12RaytracingClusteredGeometry](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12RaytracingClusteredGeometry) is a sandbox for experimenting with build modes, allocation strategies, and more. Its procedural scene makes use of both CLAS builds and cluster templates.
+* [D3D12RaytracingClusteredGeometry](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingClusteredGeometry) is a sandbox for experimenting with build modes, allocation strategies, and more. Its procedural scene makes use of both CLAS builds and cluster templates.
 * [Our RTX Mega Geometry sample](https://github.com/NVIDIA-RTX/RTXMG/) goes further with path-traced, animated content.
 * [D3D12RaytracingPartitionedTLAS](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingPartitionedTLAS) uses PTLASes to efficiently update acceleration structures in a scene with hundreds of thousands of physics objects.
