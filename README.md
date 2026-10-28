@@ -6,6 +6,7 @@ The papers focus on practical techniques, implementation trade-offs, performance
 
 ## Paper index
 
+- [Clustered Geometry and Partitioned TLAS Launch in DirectX 12, Standardizing RTX Mega Geometry](dx_clusters_and_ptlas/)
 - [Real-Time Path Tracing in Games — Best Practices for Performance and Scalability](pt_performance_whitepaper/)
 
 ## License
